@@ -1,0 +1,49 @@
+= Browser Dev Tools +++<br>+++Cheat Sheet
+John Schuster <John.schuster@PhoenixWorkgrpup.com>
+v2.1b, 09/21/2018: Cheat Sheet
+:Author: John HR Schuster
+:Company: Phoenix Learning Labs
+:toc: left
+:toclevels: 4:
+:imagesdir: ./images
+:pagenums:
+:experimental:
+:source-hightlighter: pygments
+:icons: font
+:docdir: */documents
+:github: Github repository
+:linkattrs:
+:seclinks:
+
+In order to address some browser issues reports by users of web applications it becomes
+necessary to use the `Dev Tools` build into the browser.
+
+Dev Tools can be executed by pressing the KBD:[F12] key.
+The GUI for Dev tools varies from one browser to another.
+
+Often the Dev Tools can uncover some issues on how the browser and the web application interact.
+The Web Tools provide a way to vide the JavaScript and CSS errors that can't be seen normally.
+
+== Console
+
+One of the most powerful features for debugging a web app is the `Console'.  In some cases there are errors and warning that can't bee seen without the Dev-Tools console.
+
+.Chrome Dev Tools
+image::devtoolschrome.png[Chrome Dev Tools, align='center']
+ 
+
+
+
+
+
+
+
+== Document History
+
+.Document History
+[cols='2,2,2,6' options='header']
+|===
+| Date  | Version | Author | Description
+| 09/21/2018 | V2.1b | JHRS |  Initial version
+|===
+
