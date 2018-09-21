@@ -11,7 +11,7 @@ v2.1b, 09/21/2018: Cheat Sheet
 :source-hightlighter: pygments
 :icons: font
 :docdir: */documents
-:github: Github repository
+:github: git remote add origin https://github.com/GeekMustHave/DevTools-Cheatsheet.git
 :linkattrs:
 :seclinks:
 
@@ -26,15 +26,57 @@ The Web Tools provide a way to vide the JavaScript and CSS errors that can't be 
 
 == Console
 
-One of the most powerful features for debugging a web app is the `Console'.  In some cases there are errors and warning that can't bee seen without the Dev-Tools console.
+One of the most powerful features for debugging a web app is the `Console`.  In some cases there are errors and warning that can't bee seen without the Dev-Tools console.
 
 .Chrome Dev Tools
 image::devtoolschrome.png[Chrome Dev Tools, align='center']
  
 
+=== Writing to the console
+
+Use the `console.log()` method for any basic logging to the console. It takes one or more expressions as parameters and writes their current values to the console, concatenating multiple parameters into a space-delimited line. 
+
+==== Clear Console
+
+Clear the console out to start a new test.
+
+.Clear console
+[source,JavaScript]
+----
+clear()
+----
 
 
 
+==== Date/Time example
+
+Sometimes it is good to get a date and time stamp in the console for timestamp to work.
+
+This example also shows how the `group` can be used to make the format look professional.
+
+.Display current date time
+[source,JavaScript]
+----
+console.group("Testing Timestamp");
+console.log("Phoenix Workgroup Test");
+now = new Date();
+console.log( now );
+console.groupEnd();
+----
+
+
+
+
+== References
+
+There have been many web sites that have contributed to this document.
+
+.Contributing references
+[cols='6,6,4' options='header']
+|===
+| Name  | URL | Contributes
+| Google Web Developer | https://developers.google.com/web/tools/chrome-devtools/console/console-write | Basics
+|===
 
 
 
@@ -46,4 +88,7 @@ image::devtoolschrome.png[Chrome Dev Tools, align='center']
 | Date  | Version | Author | Description
 | 09/21/2018 | V2.1b | JHRS |  Initial version
 |===
+
+
+
 
