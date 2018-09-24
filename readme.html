@@ -447,12 +447,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_console">Console</a>
 <ul class="sectlevel2">
-<li><a href="#_writing_to_the_console">Writing to the console</a>
-<ul class="sectlevel3">
-<li><a href="#_clear_console">Clear Console</a></li>
-<li><a href="#_datetime_example">Date/Time example</a></li>
+<li><a href="#_writing_to_the_console">Writing to the console</a></li>
 </ul>
 </li>
+<li><a href="#_command_menu">Command Menu</a></li>
+<li><a href="#_devtool_commands">DevTool Commands</a>
+<ul class="sectlevel2">
+<li><a href="#_clear_console">Clear Console</a></li>
+<li><a href="#_chrome_version">Chrome Version</a></li>
+<li><a href="#_current_datetime">Current Date/Time</a></li>
+<li><a href="#_display_body_dom">Display Body DOM</a></li>
+<li><a href="#_network_panel_description">Network Panel Description</a></li>
+<li><a href="#_reload_page">Reload Page</a></li>
+<li><a href="#_save_console_to_file">Save Console to file</a></li>
 </ul>
 </li>
 <li><a href="#_references">References</a></li>
@@ -494,28 +501,117 @@ The Web Tools provide a way to vide the JavaScript and CSS errors that can&#8217
 <div class="paragraph">
 <p>Use the <code>console.log()</code> method for any basic logging to the console. It takes one or more expressions as parameters and writes their current values to the console, concatenating multiple parameters into a space-delimited line.</p>
 </div>
-<div class="sect3">
-<h4 id="_clear_console">Clear Console</h4>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_command_menu">Command Menu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Many of the commands for the Dev tools can be quickly access via the Command Menu.</p>
+</div>
+<div class="paragraph">
+<p>Press <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd></span> for the Command Menu, then scroll up and down list for the command you need.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/commandmenuexample.png" alt="Example Command Menu">
+</div>
+<div class="title">Figure 2. Example Command Menu</div>
+</div>
+<div class="paragraph">
+<p>A description of the Chrome Devtools protocol with commands is available <a href="https://chromedevtools.github.io/devtools-protocol/" target="_blank" rel="noopener">at this link</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_devtool_commands">DevTool Commands</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here is a list of the DevTool commands that have proven useful for debugging browser issues.</p>
+</div>
+<div class="paragraph">
+<p><a href="#_clear_console">Clear Console</a> - Clear off console</p>
+</div>
+<div class="paragraph">
+<p><a href="#_chrome_version">Chrome Version</a> - Get Chrome version info</p>
+</div>
+<div class="paragraph">
+<p><a href="#_current_datetime">Current Date/Time</a> - Display timestamp for testing</p>
+</div>
+<div class="paragraph">
+<p><a href="#_display_body_dom">Display Body DOM</a> - Display properties of body of web page</p>
+</div>
+<div class="paragraph">
+<p><a href="#_network_panel_description">Network Panel Description</a> - What do columns mean?</p>
+</div>
+<div class="paragraph">
+<p><a href="#_reload_page">Reload Page</a> - Reload the last page</p>
+</div>
+<div class="paragraph">
+<p><a href="#_save_console_to_file">Save Console to file</a> - Save content of the log to a file</p>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="_clear_console">Clear Console</h3>
 <div class="paragraph">
 <p>Clear the console out to start a new test.</p>
 </div>
 <div class="listingblock">
-<div class="title">Clear console</div>
 <div class="content">
 <pre class="highlight"><code class="language-JavaScript" data-lang="JavaScript">clear()</code></pre>
 </div>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/clear.png" alt="Example">
 </div>
-<div class="sect3">
-<h4 id="_datetime_example">Date/Time example</h4>
-<div class="paragraph">
-<p>Sometimes it is good to get a date and time stamp in the console for timestamp to work.</p>
+<div class="title">Figure 3. Example Clear Console</div>
 </div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_chrome_version">Chrome Version</h3>
 <div class="paragraph">
-<p>This example also shows how the <code>group</code> can be used to make the format look professional.</p>
+<p>Display the current version information about Chrome.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This is entered in as a URL, not a DevTool command.
+</td>
+</tr>
+</table>
 </div>
 <div class="listingblock">
-<div class="title">Display current date time</div>
+<div class="content">
+<pre class="highlight"><code class="language-Powershell" data-lang="Powershell">chrome://device</code></pre>
+</div>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/chromeversion.png" alt="Example Chrome Version">
+</div>
+<div class="title">Figure 4. Example Chrome Version</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_current_datetime">Current Date/Time</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Current Date / Time</dt>
+<dd>
+<p>Sometimes it is good to get a date and time stamp in the console for timestamp to work.
+This example also shows how the <code>group</code> can be used to make the format look professional.</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-JavaScript" data-lang="JavaScript">console.group("Testing Timestamp");
 console.log("Phoenix Workgroup Test");
@@ -524,7 +620,101 @@ console.log( now );
 console.groupEnd();</code></pre>
 </div>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/datetime.png" alt="Example">
 </div>
+<div class="title">Figure 5. Example Timestamp</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_display_body_dom">Display Body DOM</h3>
+<div class="paragraph">
+<p>Displays expandable list of the body of the web page.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Remember to open up the single line is result for all properties.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-JavaScript" data-lang="JavaScript">console.dir(document.body)</code></pre>
+</div>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/documentbodyproperties.png" alt="Example dicument.body properties">
+</div>
+<div class="title">Figure 6. Example dicument.body properties</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_network_panel_description">Network Panel Description</h3>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/networkinfotab.png" alt="Network Tab">
+</div>
+<div class="title">Figure 7. Network Tab</div>
+</div>
+<div class="paragraph">
+<p>What do columns in the Network Panel mean?</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/networkpanel.png" alt="Network Panel Description">
+</div>
+<div class="title">Figure 8. Network Panel Description</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_reload_page">Reload Page</h3>
+<div class="paragraph">
+<p>Sometime it is necessary to reload the page.  (ie: update network info).</p>
+</div>
+<div class="paragraph">
+<p>Press the <kbd>F5</kbd></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_save_console_to_file">Save Console to file</h3>
+<div class="paragraph">
+<p>Save the content of the console to a file.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This is done inside of the active console window.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/saveconsole.png" alt="Save console to file">
+</div>
+<div class="title">Figure 9. Save console to file</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/consolelogdisplay.png" alt="Example Saved Console Log align='center'">
+</div>
+<div class="title">Figure 10. Example Saved Console Log</div>
+</div>
+<hr>
 </div>
 </div>
 </div>
@@ -550,9 +740,19 @@ console.groupEnd();</code></pre>
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AntiCode Dev Tools</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://anti-code.com/devtools-cheatsheet/" target="_blank" rel="noopener">http://anti-code.com/devtools-cheatsheet/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cheat sheet, slow!</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Google Web Developer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://developers.google.com/web/tools/chrome-devtools/console/console-write" class="bare">https://developers.google.com/web/tools/chrome-devtools/console/console-write</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://developers.google.com/web/tools/chrome-devtools/console/console-write" target="_blank" rel="noopener">https://developers.google.com/web/tools/chrome-devtools/console/console-write</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Basics</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Do anything in console</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://umaar.com/dev-tips/98-command-menu/" target="_blank" rel="noopener">https://umaar.com/dev-tips/98-command-menu/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
 </tr>
 </tbody>
 </table>
@@ -592,7 +792,7 @@ console.groupEnd();</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 2.1b<br>
-Last updated 2018-09-21 15:00:13 Eastern Daylight Time
+Last updated 2018-09-23 19:53:12 Eastern Daylight Time
 </div>
 </div>
 </body>

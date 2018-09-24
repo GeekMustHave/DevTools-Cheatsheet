@@ -36,25 +36,83 @@ image::devtoolschrome.png[Chrome Dev Tools, align='center']
 
 Use the `console.log()` method for any basic logging to the console. It takes one or more expressions as parameters and writes their current values to the console, concatenating multiple parameters into a space-delimited line. 
 
-==== Clear Console
+== Command Menu
 
+Many of the commands for the Dev tools can be quickly access via the Command Menu.
+
+Press kbd:[Ctrl+Shift+P] for the Command Menu, then scroll up and down list for the command you need.
+
+.Example Command Menu
+image::commandmenuexample.png[Example Command Menu, align='center']
+ 
+A description of the Chrome Devtools protocol with commands is available https://chromedevtools.github.io/devtools-protocol/[at this link,window='_blank']. 
+
+
+
+== DevTool Commands
+
+Here is a list of the DevTool commands that have proven useful for debugging browser issues.
+
+<<Clear Console>> - Clear off console
+
+<<Chrome Version>> - Get Chrome version info
+
+<<Current Date/Time>> - Display timestamp for testing
+
+<<Display Body DOM>> - Display properties of body of web page
+
+<<Network Panel Description>> - What do columns mean?
+
+<<Reload Page>> - Reload the last page
+
+<<Save Console to file>> - Save content of the log to a file
+
+
+
+---
+
+
+
+
+
+=== Clear Console
 Clear the console out to start a new test.
 
-.Clear console
 [source,JavaScript]
 ----
 clear()
 ----
 
+.Example Clear Console
+image::clear.png[Example, align='center']
+---
 
 
-==== Date/Time example
 
-Sometimes it is good to get a date and time stamp in the console for timestamp to work.
 
+=== Chrome Version
+Display the current version information about Chrome.
+
+NOTE: This is entered in as a URL, not a DevTool command.
+
+
+[source,Powershell]
+----
+chrome://device
+----
+
+.Example Chrome Version
+image::chromeversion.png[Example Chrome Version, align='center']
+---
+
+
+
+
+
+=== Current Date/Time
+Current Date / Time:: Sometimes it is good to get a date and time stamp in the console for timestamp to work.
 This example also shows how the `group` can be used to make the format look professional.
 
-.Display current date time
 [source,JavaScript]
 ----
 console.group("Testing Timestamp");
@@ -63,6 +121,69 @@ now = new Date();
 console.log( now );
 console.groupEnd();
 ----
+
+.Example Timestamp
+image::datetime.png[Example, align='center']
+---
+
+
+=== Display Body DOM
+
+Displays expandable list of the body of the web page.
+
+NOTE: Remember to open up the single line is result for all properties.
+
+[source,JavaScript]
+----
+console.dir(document.body)
+----
+
+.Example dicument.body properties
+image::documentbodyproperties.png[Example dicument.body properties, align='center']
+ 
+
+
+
+
+
+=== Network Panel Description
+
+.Network Tab
+image::networkinfotab.png[Network Tab, align='center']
+
+What do columns in the Network Panel mean?
+
+.Network Panel Description
+image::networkpanel.png[Network Panel Description, align='center']
+--- 
+
+
+
+=== Reload Page
+
+Sometime it is necessary to reload the page.  (ie: update network info).
+
+Press the kbd:[F5]
+
+
+
+
+
+=== Save Console to file
+
+Save the content of the console to a file.
+
+NOTE: This is done inside of the active console window.
+
+.Save console to file
+image::saveconsole.png[Save console to file, align='center']
+
+.Example Saved Console Log
+image::consolelogdisplay.png[Example Saved Console Log align='center']
+--- 
+
+ 
+
 
 
 
@@ -75,7 +196,14 @@ There have been many web sites that have contributed to this document.
 [cols='6,6,4' options='header']
 |===
 | Name  | URL | Contributes
-| Google Web Developer | https://developers.google.com/web/tools/chrome-devtools/console/console-write | Basics
+| AntiCode Dev Tools | http://anti-code.com/devtools-cheatsheet/[http://anti-code.com/devtools-cheatsheet/, window='_blank'] | Cheat sheet, slow!
+
+| Google Web Developer | https://developers.google.com/web/tools/chrome-devtools/console/console-write[https://developers.google.com/web/tools/chrome-devtools/console/console-write, window='_blank'] | Basics
+
+|Do anything in console  | https://umaar.com/dev-tips/98-command-menu/[https://umaar.com/dev-tips/98-command-menu/, window='_blank'] | Examples
+
+|Chrome Tools Protocol Viewer | https://chromedevtools.github.io/devtools-protocol/[https://chromedevtools.github.io/devtools-protocol/, window='_blank']
+
 |===
 
 
