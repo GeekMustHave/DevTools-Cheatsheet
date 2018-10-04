@@ -453,6 +453,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_writing_to_the_console">Writing to the console</a></li>
 </ul>
 </li>
+<li><a href="#_browser_versions">Browser Versions</a>
+<ul class="sectlevel2">
+<li><a href="#_chrome_version">Chrome Version</a></li>
+<li><a href="#_internet_explorer_version">Internet Explorer Version</a></li>
+<li><a href="#_edge_version_emulation">Edge Version (Emulation)</a></li>
+</ul>
+</li>
 <li><a href="#_command_menu">Command Menu</a>
 <ul class="sectlevel2">
 <li><a href="#_google_chrome_browser">Google Chrome Browser</a></li>
@@ -461,11 +468,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_devtool_commands">DevTool Commands</a>
 <ul class="sectlevel2">
 <li><a href="#_clear_console">Clear Console</a></li>
-<li><a href="#_chrome_version">Chrome Version</a></li>
 <li><a href="#_current_datetime">Current Date/Time</a></li>
 <li><a href="#_display_body_dom">Display Body DOM</a></li>
-<li><a href="#_edge_version_emulation">Edge Version (Emulation)</a></li>
-<li><a href="#_internet_explorer_version">Internet Explorer Version</a></li>
 <li><a href="#_network_panel_description">Network Panel Description</a></li>
 <li><a href="#_reload_page">Reload Page</a></li>
 <li><a href="#_save_console_to_file">Save Console to file</a></li>
@@ -563,6 +567,80 @@ The DevTools <kbd>F12</kbd> will appear slightly different depending on the brow
 </div>
 </div>
 <div class="sect1">
+<h2 id="_browser_versions">Browser Versions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The browsr version can often have an impact on how a web page performs and displays.</p>
+</div>
+<div class="sect2">
+<h3 id="_chrome_version">Chrome Version</h3>
+<div class="paragraph">
+<p>Display the current version information about Chrome.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This is entered in as a URL, <strong>not</strong> a <kbd>F12</kbd> DevTool command.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-Powershell" data-lang="Powershell">chrome://device</code></pre>
+</div>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/chromeversion.png" alt="Example Chrome Version">
+</div>
+<div class="title">Figure 4. Example Chrome Version</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_internet_explorer_version">Internet Explorer Version</h3>
+<div class="paragraph">
+<p>Some issues are caused by the wrong version of Internet Explorer being used.</p>
+</div>
+<div class="paragraph">
+<p>This is done from the DevTools <kbd>F12</kbd> menu.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/ie-version.png" alt="Ineternet Explorer Version">
+</div>
+<div class="title">Figure 5. Ineternet Explorer Version</div>
+</div>
+<div class="paragraph">
+<p>You can change the Version of the IE browser by selecting one from the list.  The Internet Explorer Version will temporarily be set to that version.</p>
+</div>
+<div class="paragraph">
+<p>This great for testing if the IE browser version is the issue.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_edge_version_emulation">Edge Version (Emulation)</h3>
+<div class="paragraph">
+<p>The newer Microsoft Edge browser has an <code>Emulation</code> feature from the menu that lets you emulate many different browsers.</p>
+</div>
+<div class="paragraph">
+<p>This is done from the DevTools <kbd>F12</kbd> menu.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/edge-version.png" alt="Edge Version (Emulation)">
+</div>
+<div class="title">Figure 6. Edge Version (Emulation)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_command_menu">Command Menu</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -580,7 +658,7 @@ The DevTools <kbd>F12</kbd> will appear slightly different depending on the brow
 <div class="content">
 <img src="./images/commandmenuexample.png" alt="Example Command Menu">
 </div>
-<div class="title">Figure 4. Example Command Menu</div>
+<div class="title">Figure 7. Example Command Menu</div>
 </div>
 </div>
 </div>
@@ -592,25 +670,13 @@ The DevTools <kbd>F12</kbd> will appear slightly different depending on the brow
 <p>Here is a list of the DevTool commands that have proven useful for debugging browser issues.</p>
 </div>
 <div class="paragraph">
-<p><a href="#_internet_explorer_version">Internet Explorer Version</a></p>
-</div>
-<div class="paragraph">
 <p><a href="#_clear_console">Clear Console</a> - Clear off console</p>
-</div>
-<div class="paragraph">
-<p><a href="#_chrome_version">Chrome Version</a> - Get Chrome version info</p>
 </div>
 <div class="paragraph">
 <p><a href="#_current_datetime">Current Date/Time</a> - Display timestamp for testing</p>
 </div>
 <div class="paragraph">
 <p><a href="#_display_body_dom">Display Body DOM</a> - Display properties of body of web page</p>
-</div>
-<div class="paragraph">
-<p><a href="#_edge_version_emulation">Edge Version (Emulation)</a> - View version number and emulate many other browsers</p>
-</div>
-<div class="paragraph">
-<p><a href="#_internet_explorer_version">Internet Explorer Version</a> - Determine IE browser version 11,10,9,8,7</p>
 </div>
 <div class="paragraph">
 <p><a href="#_network_panel_description">Network Panel Description</a> - What do columns mean?</p>
@@ -639,37 +705,7 @@ The DevTools <kbd>F12</kbd> will appear slightly different depending on the brow
 <div class="content">
 <img src="./images/clear.png" alt="Example">
 </div>
-<div class="title">Figure 5. Example Clear Console</div>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_chrome_version">Chrome Version</h3>
-<div class="paragraph">
-<p>Display the current version information about Chrome.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-This is entered in as a URL, not a <kbd>F12</kbd> DevTool command.
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-Powershell" data-lang="Powershell">chrome://device</code></pre>
-</div>
-</div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="./images/chromeversion.png" alt="Example Chrome Version">
-</div>
-<div class="title">Figure 6. Example Chrome Version</div>
+<div class="title">Figure 8. Example Clear Console</div>
 </div>
 <hr>
 </div>
@@ -697,7 +733,7 @@ console.groupEnd();</code></pre>
 <div class="content">
 <img src="./images/datetime.png" alt="Example">
 </div>
-<div class="title">Figure 7. Example Timestamp</div>
+<div class="title">Figure 9. Example Timestamp</div>
 </div>
 <hr>
 </div>
@@ -727,37 +763,7 @@ Remember to open up the single line is result for all properties.
 <div class="content">
 <img src="./images/documentbodyproperties.png" alt="Example dicument.body properties">
 </div>
-<div class="title">Figure 8. Example dicument.body properties</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_edge_version_emulation">Edge Version (Emulation)</h3>
-<div class="paragraph">
-<p>The newer Microsoft Edge browser has an <code>Emulation</code> feature from the menu that lets you emulate many different browsers.</p>
-</div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="./images/edge-version.png" alt="Edge Version (Emulation)">
-</div>
-<div class="title">Figure 9. Edge Version (Emulation)</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_internet_explorer_version">Internet Explorer Version</h3>
-<div class="paragraph">
-<p>Some issues are caused by the wrong version of Internet Explorer being used.  To determine the version of Internet Explorer you need to open IE DevTools by pressing <kbd>F12</kbd></p>
-</div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="./images/ie-version.png" alt="Ineternet Explorer Version">
-</div>
-<div class="title">Figure 10. Ineternet Explorer Version</div>
-</div>
-<div class="paragraph">
-<p>You can change the Version of the IE browser by selecting one from the list.  The Internet Explorer Version will temporarily be set to that version.</p>
-</div>
-<div class="paragraph">
-<p>This great for testing if the IE browser version is the issue.</p>
+<div class="title">Figure 10. Example dicument.body properties</div>
 </div>
 </div>
 <div class="sect2">
@@ -944,7 +950,7 @@ This is done inside of the active console window.
 <div id="footer">
 <div id="footer-text">
 Version 2.1d<br>
-Last updated 2018-10-04 13:29:37 Eastern Daylight Time
+Last updated 2018-10-04 13:36:38 Eastern Daylight Time
 </div>
 </div>
 </body>

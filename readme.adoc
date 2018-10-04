@@ -58,6 +58,59 @@ image::devtools-edge.png[Edge Dev Tools, align='center']
 
 Use the `console.log()` method for any basic logging to the console. It takes one or more expressions as parameters and writes their current values to the console, concatenating multiple parameters into a space-delimited line. 
 
+
+== Browser Versions
+
+The browsr version can often have an impact on how a web page performs and displays.
+
+
+
+=== Chrome Version
+Display the current version information about Chrome.
+
+NOTE: This is entered in as a URL, *not* a kbd:[F12] DevTool command.
+
+[source,Powershell]
+----
+chrome://device
+----
+
+.Example Chrome Version
+image::chromeversion.png[Example Chrome Version, align='center']
+---
+
+
+
+
+
+=== Internet Explorer Version
+
+Some issues are caused by the wrong version of Internet Explorer being used.  
+
+This is done from the DevTools kbd:[F12] menu.
+
+.Ineternet Explorer Version
+image::ie-version.png[Ineternet Explorer Version, align='center']
+
+You can change the Version of the IE browser by selecting one from the list.  The Internet Explorer Version will temporarily be set to that version.
+
+This great for testing if the IE browser version is the issue.
+ 
+ 
+
+
+=== Edge Version (Emulation)
+
+The newer Microsoft Edge browser has an `Emulation` feature from the menu that lets you emulate many different browsers.
+
+This is done from the DevTools kbd:[F12] menu.
+
+.Edge Version (Emulation)
+image::edge-version.png[Edge Version (Emulation), align='center']
+
+
+
+
 == Command Menu
 
 Many of the commands for the Dev tools can be quickly access via the Google Chrome Command Menu.
@@ -75,23 +128,20 @@ image::commandmenuexample.png[Example Command Menu, align='center']
 
 
 
+
+
 == DevTool Commands
 
 Here is a list of the DevTool commands that have proven useful for debugging browser issues.
 
-<<Internet Explorer Version>>
+
 
 <<Clear Console>> - Clear off console
-
-<<Chrome Version>> - Get Chrome version info
 
 <<Current Date/Time>> - Display timestamp for testing
 
 <<Display Body DOM>> - Display properties of body of web page
 
-<<Edge Version (Emulation)>> - View version number and emulate many other browsers
-
-<<Internet Explorer Version>> - Determine IE browser version 11,10,9,8,7
 
 <<Network Panel Description>> - What do columns mean?
 
@@ -122,20 +172,7 @@ image::clear.png[Example, align='center']
 
 
 
-=== Chrome Version
-Display the current version information about Chrome.
 
-NOTE: This is entered in as a URL, not a kbd:[F12] DevTool command.
-
-
-[source,Powershell]
-----
-chrome://device
-----
-
-.Example Chrome Version
-image::chromeversion.png[Example Chrome Version, align='center']
----
 
 
 
@@ -175,29 +212,11 @@ image::documentbodyproperties.png[Example dicument.body properties, align='cente
  
 
 
-=== Edge Version (Emulation)
-
-The newer Microsoft Edge browser has an `Emulation` feature from the menu that lets you emulate many different browsers.
-
-.Edge Version (Emulation)
-image::edge-version.png[Edge Version (Emulation), align='center']
  
 
 
 
 
-
-=== Internet Explorer Version
-
-Some issues are caused by the wrong version of Internet Explorer being used.  To determine the version of Internet Explorer you need to open IE DevTools by pressing kbd:[F12]
-
-.Ineternet Explorer Version
-image::ie-version.png[Ineternet Explorer Version, align='center']
-
-You can change the Version of the IE browser by selecting one from the list.  The Internet Explorer Version will temporarily be set to that version.
-
-This great for testing if the IE browser version is the issue.
- 
 
 
 
