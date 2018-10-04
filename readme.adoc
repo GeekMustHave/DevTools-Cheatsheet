@@ -99,7 +99,7 @@ Here is a list of the DevTool commands that have proven useful for debugging bro
 
 <<Save Console to file>> - Save content of the log to a file
 
-
+<<Sources>> - Look at the source code
 
 ---
 
@@ -240,6 +240,30 @@ image::consolelogdisplay.png[Example Saved Console Log align='center']
 --- 
 
  
+=== Sources
+
+By clicking on the Sources menu item you can view a list of most of the source files for the website.
+
+By clicking on one of the items on the tree the code will be displayed.
+
+==== Google Chrome
+
+.Chrome Sources
+image::chrome-sources.png[Chrome Sources, align='center']
+
+==== Internet Explorer (Not Edge)
+
+.Internet Explorer (Not Edge)
+image::ie-source.png[Internet Explorer (Not Edge), align='center']
+ 
+
+ 
+
+==== Edge (Not IE)
+
+.Edge (Not IE) Source
+image::edge-source.png[Edge (Not IE) Source, align='center']
+ 
 
 
 
@@ -272,6 +296,7 @@ There have been many web sites that have contributed to this document.
 |===
 | Date  | Version | Author | Description
 | 10/04/2018 | V2.1d | JHRS | Added IE/Edge example
+                              Added Source viewing
 | 08/23/2018 | V2.1c | JHRS | Updated with Command Menu, better structure
 | 09/21/2018 | V2.1b | JHRS |  Initial version
 |===
