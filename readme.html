@@ -447,16 +447,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_console">Console</a>
 <ul class="sectlevel2">
+<li><a href="#_chrome_browser">Chrome Browser</a></li>
+<li><a href="#_internet_explorer_not_edge">Internet Explorer (not Edge)</a></li>
+<li><a href="#_microsoft_edge_not_internet_explorer">Microsoft Edge (Not Internet Explorer)</a></li>
 <li><a href="#_writing_to_the_console">Writing to the console</a></li>
 </ul>
 </li>
-<li><a href="#_command_menu">Command Menu</a></li>
+<li><a href="#_command_menu">Command Menu</a>
+<ul class="sectlevel2">
+<li><a href="#_google_chrome_browser">Google Chrome Browser</a></li>
+</ul>
+</li>
 <li><a href="#_devtool_commands">DevTool Commands</a>
 <ul class="sectlevel2">
 <li><a href="#_clear_console">Clear Console</a></li>
 <li><a href="#_chrome_version">Chrome Version</a></li>
 <li><a href="#_current_datetime">Current Date/Time</a></li>
 <li><a href="#_display_body_dom">Display Body DOM</a></li>
+<li><a href="#_edge_version_emulation">Edge Version (Emulation)</a></li>
+<li><a href="#_internet_explorer_version">Internet Explorer Version</a></li>
 <li><a href="#_network_panel_description">Network Panel Description</a></li>
 <li><a href="#_reload_page">Reload Page</a></li>
 <li><a href="#_save_console_to_file">Save Console to file</a></li>
@@ -475,12 +484,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 necessary to use the <code>Dev Tools</code> build into the browser.</p>
 </div>
 <div class="paragraph">
-<p>Dev Tools can be executed by pressing the KBD:[F12] key.
+<p>Dev Tools can be executed by pressing the <kbd>F12</kbd> key.
 The GUI for Dev tools varies from one browser to another.</p>
 </div>
 <div class="paragraph">
 <p>Often the Dev Tools can uncover some issues on how the browser and the web application interact.
 The Web Tools provide a way to vide the JavaScript and CSS errors that can&#8217;t be seen normally.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The DevTools <kbd>F12</kbd> will appear slightly different depending on the browser you are using.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This document will be available via the <a href="https://tinyurl.com/y7kspwj8" target="_blank" rel="noopener">https://tinyurl.com/y7kspwj8</a> link.</p>
 </div>
 </div>
 </div>
@@ -490,11 +514,32 @@ The Web Tools provide a way to vide the JavaScript and CSS errors that can&#8217
 <div class="paragraph">
 <p>One of the most powerful features for debugging a web app is the <code>Console</code>.  In some cases there are errors and warning that can&#8217;t bee seen without the Dev-Tools console.</p>
 </div>
+<div class="sect2">
+<h3 id="_chrome_browser">Chrome Browser</h3>
 <div class="imageblock" style="text-align: center">
 <div class="content">
 <img src="./images/devtoolschrome.png" alt="Chrome Dev Tools">
 </div>
 <div class="title">Figure 1. Chrome Dev Tools</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_internet_explorer_not_edge">Internet Explorer (not Edge)</h3>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/devtools-ie.png" alt="Internet Explorer (Not Edge)">
+</div>
+<div class="title">Figure 2. Internet Explorer Dev Tools (Not Edge)</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_microsoft_edge_not_internet_explorer">Microsoft Edge (Not Internet Explorer)</h3>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/devtools-edge.png" alt="Edge Dev Tools">
+</div>
+<div class="title">Figure 3. Edge (Not Interenet Explorer) Dev Tools</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_writing_to_the_console">Writing to the console</h3>
@@ -508,8 +553,13 @@ The Web Tools provide a way to vide the JavaScript and CSS errors that can&#8217
 <h2 id="_command_menu">Command Menu</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Many of the commands for the Dev tools can be quickly access via the Command Menu.</p>
+<p>Many of the commands for the Dev tools can be quickly access via the Google Chrome Command Menu.</p>
 </div>
+<div class="paragraph">
+<p>A description of the Chrome Devtools protocol with commands is available <a href="https://chromedevtools.github.io/devtools-protocol/" target="_blank" rel="noopener">at this link</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_google_chrome_browser">Google Chrome Browser</h3>
 <div class="paragraph">
 <p>Press <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd></span> for the Command Menu, then scroll up and down list for the command you need.</p>
 </div>
@@ -517,10 +567,8 @@ The Web Tools provide a way to vide the JavaScript and CSS errors that can&#8217
 <div class="content">
 <img src="./images/commandmenuexample.png" alt="Example Command Menu">
 </div>
-<div class="title">Figure 2. Example Command Menu</div>
+<div class="title">Figure 4. Example Command Menu</div>
 </div>
-<div class="paragraph">
-<p>A description of the Chrome Devtools protocol with commands is available <a href="https://chromedevtools.github.io/devtools-protocol/" target="_blank" rel="noopener">at this link</a>.</p>
 </div>
 </div>
 </div>
@@ -529,6 +577,9 @@ The Web Tools provide a way to vide the JavaScript and CSS errors that can&#8217
 <div class="sectionbody">
 <div class="paragraph">
 <p>Here is a list of the DevTool commands that have proven useful for debugging browser issues.</p>
+</div>
+<div class="paragraph">
+<p><a href="#_internet_explorer_version">Internet Explorer Version</a></p>
 </div>
 <div class="paragraph">
 <p><a href="#_clear_console">Clear Console</a> - Clear off console</p>
@@ -541,6 +592,12 @@ The Web Tools provide a way to vide the JavaScript and CSS errors that can&#8217
 </div>
 <div class="paragraph">
 <p><a href="#_display_body_dom">Display Body DOM</a> - Display properties of body of web page</p>
+</div>
+<div class="paragraph">
+<p><a href="#_edge_version_emulation">Edge Version (Emulation)</a> - View version number and emulate many other browsers</p>
+</div>
+<div class="paragraph">
+<p><a href="#_internet_explorer_version">Internet Explorer Version</a> - Determine IE browser version 11,10,9,8,7</p>
 </div>
 <div class="paragraph">
 <p><a href="#_network_panel_description">Network Panel Description</a> - What do columns mean?</p>
@@ -566,7 +623,7 @@ The Web Tools provide a way to vide the JavaScript and CSS errors that can&#8217
 <div class="content">
 <img src="./images/clear.png" alt="Example">
 </div>
-<div class="title">Figure 3. Example Clear Console</div>
+<div class="title">Figure 5. Example Clear Console</div>
 </div>
 <hr>
 </div>
@@ -582,7 +639,7 @@ The Web Tools provide a way to vide the JavaScript and CSS errors that can&#8217
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-This is entered in as a URL, not a DevTool command.
+This is entered in as a URL, not a <kbd>F12</kbd> DevTool command.
 </td>
 </tr>
 </table>
@@ -596,7 +653,7 @@ This is entered in as a URL, not a DevTool command.
 <div class="content">
 <img src="./images/chromeversion.png" alt="Example Chrome Version">
 </div>
-<div class="title">Figure 4. Example Chrome Version</div>
+<div class="title">Figure 6. Example Chrome Version</div>
 </div>
 <hr>
 </div>
@@ -624,7 +681,7 @@ console.groupEnd();</code></pre>
 <div class="content">
 <img src="./images/datetime.png" alt="Example">
 </div>
-<div class="title">Figure 5. Example Timestamp</div>
+<div class="title">Figure 7. Example Timestamp</div>
 </div>
 <hr>
 </div>
@@ -654,7 +711,37 @@ Remember to open up the single line is result for all properties.
 <div class="content">
 <img src="./images/documentbodyproperties.png" alt="Example dicument.body properties">
 </div>
-<div class="title">Figure 6. Example dicument.body properties</div>
+<div class="title">Figure 8. Example dicument.body properties</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_edge_version_emulation">Edge Version (Emulation)</h3>
+<div class="paragraph">
+<p>The newer Microsoft Edge browser has an <code>Emulation</code> feature from the menu that lets you emulate many different browsers.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/edge-version.png" alt="Edge Version (Emulation)">
+</div>
+<div class="title">Figure 9. Edge Version (Emulation)</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_internet_explorer_version">Internet Explorer Version</h3>
+<div class="paragraph">
+<p>Some issues are caused by the wrong version of Internet Explorer being used.  To determine the version of Internet Explorer you need to open IE DevTools by pressing <kbd>F12</kbd></p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/ie-version.png" alt="Ineternet Explorer Version">
+</div>
+<div class="title">Figure 10. Ineternet Explorer Version</div>
+</div>
+<div class="paragraph">
+<p>You can change the Version of the IE browser by selecting one from the list.  The Internet Explorer Version will temporarily be set to that version.</p>
+</div>
+<div class="paragraph">
+<p>This great for testing if the IE browser version is the issue.</p>
 </div>
 </div>
 <div class="sect2">
@@ -663,7 +750,7 @@ Remember to open up the single line is result for all properties.
 <div class="content">
 <img src="./images/networkinfotab.png" alt="Network Tab">
 </div>
-<div class="title">Figure 7. Network Tab</div>
+<div class="title">Figure 11. Network Tab</div>
 </div>
 <div class="paragraph">
 <p>What do columns in the Network Panel mean?</p>
@@ -672,7 +759,7 @@ Remember to open up the single line is result for all properties.
 <div class="content">
 <img src="./images/networkpanel.png" alt="Network Panel Description">
 </div>
-<div class="title">Figure 8. Network Panel Description</div>
+<div class="title">Figure 12. Network Panel Description</div>
 </div>
 <hr>
 </div>
@@ -706,13 +793,13 @@ This is done inside of the active console window.
 <div class="content">
 <img src="./images/saveconsole.png" alt="Save console to file">
 </div>
-<div class="title">Figure 9. Save console to file</div>
+<div class="title">Figure 13. Save console to file</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="./images/consolelogdisplay.png" alt="Example Saved Console Log align='center'">
 </div>
-<div class="title">Figure 10. Example Saved Console Log</div>
+<div class="title">Figure 14. Example Saved Console Log</div>
 </div>
 <hr>
 </div>
@@ -779,6 +866,18 @@ This is done inside of the active console window.
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10/04/2018</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">V2.1d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JHRS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Added IE/Edge example</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">08/23/2018</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">V2.1c</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JHRS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Updated with Command Menu, better structure</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">09/21/2018</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">V2.1b</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">JHRS</p></td>
@@ -792,7 +891,7 @@ This is done inside of the active console window.
 <div id="footer">
 <div id="footer-text">
 Version 2.1b<br>
-Last updated 2018-09-23 19:53:12 Eastern Daylight Time
+Last updated 2018-10-04 12:47:06 Eastern Daylight Time
 </div>
 </div>
 </body>
