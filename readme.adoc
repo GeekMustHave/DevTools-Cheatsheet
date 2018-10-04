@@ -18,11 +18,13 @@ v2.1b, 09/21/2018: Cheat Sheet
 In order to address some browser issues reports by users of web applications it becomes
 necessary to use the `Dev Tools` build into the browser.
 
-Dev Tools can be executed by pressing the KBD:[F12] key.
+Dev Tools can be executed by pressing the kbd:[F12] key.
 The GUI for Dev tools varies from one browser to another.
 
 Often the Dev Tools can uncover some issues on how the browser and the web application interact.
 The Web Tools provide a way to vide the JavaScript and CSS errors that can't be seen normally.
+
+This document will be available via the https://tinyurl.com/y7kspwj8[https://tinyurl.com/y7kspwj8, window='_blank'] link.
 
 == Console
 
@@ -214,6 +216,7 @@ There have been many web sites that have contributed to this document.
 [cols='2,2,2,6' options='header']
 |===
 | Date  | Version | Author | Description
+| 08/23/2018 | V2.1c | JHRS | Updated with Command Menu, better structure
 | 09/21/2018 | V2.1b | JHRS |  Initial version
 |===
 
